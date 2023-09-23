@@ -1,10 +1,10 @@
 Program #1
 
-Name:
+Name: Caden McFate
 
 COSC 2030
 
-Competing: YES or NO
+Competing: YES
 
 Best run time:
 
