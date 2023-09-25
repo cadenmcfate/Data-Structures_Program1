@@ -1,6 +1,8 @@
 //node.h
 //defines the node class for a linked list
 //Caden McFate
+//Programming assignment 1
+//COSC 2030
 
 #ifndef NODE_
 #define NODE_
