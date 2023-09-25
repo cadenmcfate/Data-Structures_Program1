@@ -50,14 +50,14 @@ int main(void) {
 			if (!isalpha(buffer[0])) { uncheckedCount++;  continue; } //starts with a non-letter
 			currentCompares = dic.find(buffer);
 			if (currentCompares > 0) { validWords++; validCompares += currentCompares; } //currentCompares is a positive value if the word was found in the dictionary.
-			else { invalidWords++; invalidCompares += currentCompares; mispelledVec.push_back(buffer + " "); } //currentCompares is a negative value if the word wasn't found.
+			else { invalidWords++; invalidCompares += currentCompares; mispelledVec.push_back(buffer); } //currentCompares is a negative value if the word wasn't found.
 		}
 	}
 	invalidCompares *= -1; //adjusting invalidCompares to be positive.
 	timer.Stop();
 	oFile.open("misspelled.txt"); //writing all the misspelled words to misspelled.txt
 	for (int i = 0; i < mispelledVec.size(); i++) {
-		oFile << mispelledVec[i] << '\n';
+		oFile << mispelledVec[i] << endl;
 	}
 	oFile.close();
 	cout << "dictionary size " << dic.getSize() << endl; //results
